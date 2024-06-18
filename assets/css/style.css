@@ -1,0 +1,553 @@
+@font-face {
+    font-family: 'IrishGrover';
+    src: url('../font/IrishGrover-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InriaSans Light';
+    src: url('../font/InriaSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'InriaSans Bold';
+    src: url('../font/InriaSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans Bold';
+    src: url('../font/OpenSans-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'OpenSans Regular';
+    src: url('../font/OpenSans-Regular.ttf') format('truetype');
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.button {
+    color: white;
+    padding: 15px 30px;
+    border-radius: 20px;
+    text-decoration: none;
+    border: 2px solid white;
+}
+
+.button:hover,
+.button:active {
+    background-color: white;
+    color: #434343 !important;
+}
+
+/* Header */
+
+header {
+    height: 40px;
+    display: flex;
+    color: white;
+    padding: 20px 40px;
+    align-items: center;
+    background-color: #484848;
+    justify-content: space-between;
+}
+
+header.wide>div:first-child {
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    font-family: 'IrishGrover';
+}
+
+footer>div:last-child,
+header.wide>div:last-child {
+    position: relative;
+}
+
+footer>div:last-child>*,
+header.wide>div:last-child>*,
+.header-small-content>section {
+    margin: 20px;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'InriaSans Light';
+}
+
+footer>div:last-child>*.active,
+header.wide>div:last-child>*.active,
+.header-small-content>section>*.active {
+    font-family: 'InriaSans Bold';
+}
+
+header.wide>div:last-child>*.underline {
+    top: 2px;
+    left: 12px;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+}
+
+.header-small-content {
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    background-color: rgb(72, 72, 72);
+}
+
+.header-small-content>section {
+    color: white;
+    display: flex;
+    font-size: 30px;
+    position: relative;
+    flex-direction: column;
+}
+
+.header-small-content>section>* {
+    margin: 25px;
+    cursor: pointer;
+}
+
+.header-small-content>section>*.underline {
+    top: 40px;
+    left: 10px;
+    width: 40px;
+    height: 2px;
+    position: absolute;
+    background-color: white;
+}
+
+@media (min-width: 600px) {
+    header.wide {
+        display: flex;
+    }
+
+    header.small {
+        display: none;
+    }
+}
+
+@media (max-width: 600px) {
+    header.wide {
+        display: none;
+    }
+
+    header.small {
+        display: flex;
+    }
+}
+
+/* Content */
+
+.container {
+    overflow: auto;
+}
+
+#profile {
+    display: none;
+    color: #3E3D3D;
+}
+
+/* Intro */
+
+#profile>.intro {
+    display: flex;
+    padding: 8% 13%;
+    max-width: 800px;
+    flex-direction: column;
+    font-family: 'OpenSans Regular';
+}
+
+#profile>.intro>.one {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+#profile>.intro>.two {
+    font-size: 3rem;
+    margin-top: 5px;
+    font-family: 'OpenSans Bold';
+}
+
+#profile>.intro>.three {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 2rem;
+    margin-top: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#profile>.intro>.three>span {
+    margin-right: 10px;
+}
+
+#profile>.intro>.three>.anim {
+    width: 260px;
+    height: 40px;
+    color: white;
+    font-size: 1.8rem;
+    padding: 2px 10px;
+    border-radius: 5px;
+    font-family: 'OpenSans Bold';
+    background-color: #484848;
+}
+
+#profile>.intro>.four {
+    font-size: 1.3rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Work */
+
+#profile>.work {
+    color: white;
+    padding: 5% 30px;
+    background-color: #434343;
+    font-family: 'OpenSans Regular';
+}
+
+#profile>.work>.hero {
+    display: flex;
+    padding: 2% 4%;
+    flex-wrap: wrap;
+    overflow: hidden;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#profile>.work>.hero>.content {
+    display: flex;
+    flex-direction: column;
+}
+
+#profile>.work>.hero>.content>.title {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#profile>.work>.hero>img {
+    width: 500px;
+    height: 500px;
+    transform: scale(-1, 1) rotate(40deg);
+}
+
+#profile>.work>.works {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    justify-content: space-evenly;
+}
+
+#profile>.work>.works>.single-work {
+    width: 35rem;
+    height: 50rem;
+    display: flex;
+    cursor: pointer;
+    max-width: 100%;
+    margin-top: 30px;
+    margin-left: 5px;
+    max-height: 500px;
+    margin-right: 5px;
+    border-radius: 10px;
+    background-color: white;
+    background-size: 130% 150%;
+    transition: all 500ms ease;
+    flex-direction: column-reverse;
+}
+
+#profile>.work>.works>.single-work>div {
+    display: none;
+    padding: 30px;
+    min-height: 40%;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'OpenSans Regular';
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+#profile>.work>.works>.single-work>div>* {
+    margin: 3px 0px;
+}
+
+#profile>.work>.works>.single-work>div>.name {
+    font-size: 30px;
+    font-family: 'OpenSans Bold';
+}
+
+#profile>.work>.works>.single-work>div>.type {
+    font-size: 20px;
+    font-family: 'OpenSans Bold';
+}
+
+#profile>.work>.works>.single-work>div>.desc {
+    max-width: 400px;
+    text-align: center;
+}
+
+#profile>.work>.works>.single-work>div>svg {
+    margin-top: 20px;
+}
+
+#profile>.work>.processes {
+    margin-top: 5%;
+    margin-left: 3%;
+    font-size: 30px;
+    font-family: 'OpenSans Bold';
+}
+
+@media (max-width: 600px) {
+    #profile>.work>.hero>img {
+        margin: auto;
+        width: 300px;
+    }
+}
+
+@media (min-width: 1340px) {
+    #profile>.work>.works>.single-work:nth-child(even) {
+        margin-top: 70px;
+    }
+}
+
+/* Capabilities */
+
+#profile>.capabilities {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8% 13%;
+    justify-content: space-between;
+    font-family: 'OpenSans Regular';
+}
+
+#profile>.capabilities>div {
+    margin: 30px;
+    display: flex;
+    max-width: 300px;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#profile>.capabilities>div>span:first-child {
+    font-size: 19px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'OpenSans Bold';
+}
+
+@media (max-width: 930px) {
+    #profile>.capabilities {
+        justify-content: center;
+    }
+}
+
+/* Contact */
+
+#profile>.contact {
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 8% 13%;
+    flex-direction: column;
+    background-color: #434343;
+    font-family: 'OpenSans Regular';
+}
+
+#profile>.contact>.title {
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#profile>.contact>.desc {
+    font-size: 15px;
+    margin-bottom: 30px;
+}
+
+#profile>.contact>.email {
+    font-size: 18px;
+    width: fit-content;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid white;
+}
+
+#profile>.contact>.actions {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#profile>.contact>.actions>* {
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Work */
+
+#work {
+    display: none;
+}
+
+#work>.header {
+    display: flex;
+    color: white;
+    font-size: 1.3rem;
+    padding: 30px 40px;
+    padding-bottom: 50px;
+    flex-direction: column;
+    background-color: #484848;
+}
+
+#work>.header>.title {
+    font-size: 50px;
+    font-family: 'OpenSans Bold';
+}
+
+#work>.header>.desc {
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+#work>.medias {
+    display: flex;
+    flex-direction: column;
+}
+
+#work>.medias>.images {
+    display: flex;
+    margin: 3rem;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    justify-content: space-evenly;
+}
+
+#work>.medias>.images>img {
+    height: 100%;
+    max-width: 50%;
+}
+
+#work>.medias>.images>img:last-child {
+    margin-top: 100px;
+}
+
+#work>.medias>.label {
+    color: #B4B4B4;
+    font-size: 20px;
+    width: fit-content;
+    margin: 30px 4.5rem;
+    margin-top: -100px;
+    font-family: 'OpenSans Regular';
+}
+
+#work>.texts {
+    color: white;
+    line-height: 1.6rem;
+    padding: 5rem 5rem;
+    background-color: #484848;
+    font-family: 'OpenSans Regular';
+}
+
+#work>.footer {
+    display: flex;
+    flex-wrap: wrap;
+    cursor: pointer;
+    padding: 5rem 5rem;
+    padding-top: 0px;
+    background-color: #484848;
+    justify-content: space-between;
+    font-family: 'OpenSans Regular';
+}
+
+#work>.footer>div:first-child {
+    margin-top: 20px;
+}
+
+#work>.footer>div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#work>.footer>div>.button {
+    margin-top: 20px;
+}
+
+#work>.footer>div>* {
+    color: white;
+    margin-right: 5px;
+    text-decoration: none;
+}
+
+#work>.footer>div>a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 500px) {
+    #work>.medias>.images>img {
+        max-width: 100%;
+    }
+
+    #work>.medias>.images>img:last-child {
+        margin-top: 0px;
+    }
+
+    #work>.medias>.label {
+        margin-top: unset;
+    }
+
+    #work>.texts,
+    #work>.footer {
+        padding: 2rem 2rem;
+    }
+
+    #f-page-underline {
+        display: none;
+    }
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    padding: 100px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+}
+
+footer>div:first-child {
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    padding-bottom: 20px;
+    font-family: 'IrishGrover';
+    border-bottom: 2px solid black;
+}
+
+footer>div:last-child {
+    margin-top: 30px;
+}
+
+footer>div:last-child>* {
+    color: #3E3D3D;
+}
+
+footer>div:last-child>*.underline {
+    top: 2px;
+    left: 12px;
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    background-color: black;
+}

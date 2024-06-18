@@ -1,0 +1,195 @@
+<!-- Adewale Azeez -->
+<!-- MIT License -->
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <meta charset="UTF-8">
+    <meta name="description" content="Hi I am Mudasiru Mubarak">
+    <meta name="keywords" content="Mudasiru,Mubarak,MM,UI,UX,Figma,User Interface,User Experience,Design">
+    <meta name="author" content="Mudasiru Mubarak">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="./favicon.png" />
+    <title>Mudasiru Mubarak</title>
+</head>
+
+<body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <header class="wide profile">
+        <div>
+            <a href="." style="color: white; text-decoration: none;">MM</a>
+        </div>
+        <div>
+            <span id="profile-page-toggle" class="active" onclick="MmScript.switchSection('profile')">Profile</span>
+            <span id="work-page-toggle" onclick="MmScript.switchSection('work')">Work</span>
+            <span id="contact-page-toggle" onclick="MmScript.switchSection('contact')">Contact</span>
+            <div class="underline" id="page-underline"></div>
+        </div>
+    </header>
+    <header class="small profile">
+        <div onclick="MmScript.toggleSmallPageHeader(true)" style="cursor: pointer; color: white;">
+            <i class="fa fa-bars"></i>
+        </div>
+    </header>
+    <section class="container" id="profile">
+        <div class="intro">
+            <span class="one">Hello, It's Me</span>
+            <span class="two">MUDASIRU MUBARAK</span>
+            <div class="three"><span>And I'm a</span>
+                <div class="anim" id="ui-ux-anim"></div>
+            </div>
+            <span class="four">Am a Passionate And User-Centered UI & UX Designer With A
+                Drive To Craft Intuitive, Visually Stunning, And User-Friendly
+                Digital Experiences. With A Keen Eye For Detail And A Solid
+                Understanding Of Human-Centered Design Principles, I Aim
+                To Bridge The Gap Between Users Needs And Business Goals.</span>
+            <span class="four">I Believe That Good Design Is Not Just About Aesthetics, But About
+                Creating Solutions That Are Both Functional And Enjoyable.
+                My Approach Is Collaborative, User-Focused, And Iterative, With
+                A Strong Emphasis On Research, Testing, And Continuous Improvement.</span>
+            <span class="four">Whether It's A Website, Mobile App, Or Software Interface, My Goal Is To
+                Design Experience That Delight, Engage, And Inspire Users.
+                Let's Work Together To Create Something Amazing!</span>
+        </div>
+        <div class="work">
+            <div class="hero">
+                <div class="content">
+                    <span class="title">Work</span>
+                    <span class="desc">UI & UX Is My Area Of Specification.</span>
+                </div>
+                <img alt="mm-work" src="./assets/images/workimage.png" />
+            </div>
+            <div class="works" id="works-container">
+            </div>
+            <div class="processes">Processes</div>
+        </div>
+        <div class="capabilities">
+            <div>
+                <span>User Research And Analysis</span>
+                <span>User research and analysis is a crucial part
+                    of the UI/UX design process. It involves
+                    understanding the needs, behaviors, and
+                    motivations of the target audience to design
+                    products that meet their requirements.</span>
+            </div>
+            <div>
+                <span>Prototyping</span>
+                <span>Prototyping is an essentials step in the UI/UX design
+                    process that involves creating a mockup or a
+                    functional model of a product or interface to test and
+                    refine its design.</span>
+            </div>
+            <div>
+                <span>Interactions Design</span>
+                <span>Interaction design and animation are crucial aspects
+                    of UI/UX design that focus on creating engaging
+                    and responsive user experiences.</span>
+            </div>
+            <div>
+                <span>Usability Testing</span>
+                <span>Usability testing is a crucial step in the
+                    UI/UX design process that involves observing
+                    users interacting with a product or interface
+                    to identify areas for improvement. It's a
+                    user-centered design method that helps
+                    designers understand how users think, feel,
+                    and behave when using a product.</span>
+            </div>
+            <div>
+                <span>Data Visualization</span>
+                <span>Data visualization is the process of creating
+                    graphical representations of data to better
+                    understand, analyze, and communicate information.
+                    It involves using visual elements like charts, graphs,
+                    maps, and interactive dashboards to help people
+                    make sense of complex data.</span>
+            </div>
+            <div>
+                <span>Voice UI Design</span>
+                <span>Voice UI design is the process of creating
+                    conversational interfaces for voice assistants like
+                    Alexa, Google Assistant, or Siri. It involves designing
+                    the conversation flow, voice interactions, and audio
+                    feedback to create a natural and intuitive user
+                    experience.</span>
+            </div>
+        </div>
+        <div class="contact">
+            <span class="title">Contact</span>
+            <span class="desc">Want To Collaborate On A Project, Discuss A Design Idea, Or Just Say Hello?
+                I'd Love To Hear From You! Feel Free To Reach Out To Me Through:</span>
+            <span class="email">mubarakoluwasegun@gmail.com</span>
+            <div class="actions">
+                <a class="button" href="./Mudasiru_Mubarak_CV.pdf">View Resume</a>
+                <a class="button" href="mailto:mubarakoluwasegun@gmail.com">Contact</a>
+            </div>
+        </div>
+    </section>
+    <section class="container" id="work">
+        <!-- <div class="header">
+            <span class="title">Rivtn Blog</span>
+            <span class="desc">Blog website where you can to share your thoughts, experiences, and expertise with a
+                wider audience.</span>
+        </div>
+        <div class="medias">
+            <div class="images">
+                <img alt="rivtn blog" src="./assets/images/blog1left.png" />
+                <img alt="rivtn blog" src="./assets/images/blog1right.png" />
+            </div>
+            <div class="label">Landing Page</div>
+        </div>
+        <div class="texts">
+            I've crafted a blog landing page with a header featuring the organization's logo in the top left corner,
+            serving as a clickable home button. The navigation menu provides seamless access to key content through
+            "featured," "news," and "categories" links. The hero section showcases a prominent headline and subtitle
+            that clearly communicate the blog's focus. A featured post stands out with a large icon image, description,
+            and faded blue background with overlaid text, grabbing users' attention. A "see more" option invites users
+            to explore further, accompanied by a navigation arrow that reveals additional latest posts in the section.
+            The latest posts are displayed with faded blue backgrounds, hover effects, and essential details like
+            category
+            tags, comment icons, images, descriptions, and dates. A news section offers a convenient shortcut to the
+            latest updates, with clickable elements highlighted in blue for easy identification. To enhance user
+            engagement,
+            I've also introduced "Recommended" and "View All" button posts, allowing users to explore popular posts and
+            authors. The "Top Authors" section completes the landing page, featuring a "View All Posts" button in the
+            right
+            corner, enabling users to access all posts written by their favorite authors.
+        </div>
+        <div class="footer">
+            <div>
+                <i class="fa fa-globe"></i>
+                <a href="https://blog.rivtn.com" target="_blank">https://blog.rivtn.com</a>
+            </div>
+            <div>
+                <div class="button" onclick="MmScript.renderWork(1)" style="margin-right: 20px;">Prev Project</div>
+                <div class="button" onclick="MmScript.renderWork(1)">Next Project</div>
+            </div>
+        </div> -->
+    </section>
+    <section class="header-small-content">
+        <header onclick="MmScript.toggleSmallPageHeader(false)" style="cursor: pointer;">
+            <i class="fa fa-times"></i>
+        </header>
+        <section>
+            <span id="s-profile-page-toggle" class="active"
+                onclick="MmScript.switchSection('profile', true)">Profile</span>
+            <span id="s-work-page-toggle" onclick="MmScript.switchSection('work', true)">Work</span>
+            <span id="s-contact-page-toggle" onclick="MmScript.switchSection('contact', true)">Contact</span>
+            <div class="underline" id="s-page-underline"></div>
+        </section>
+    </section>
+    <footer>
+        <div>MM</div>
+        <div>
+            <span id="f-profile-page-toggle" class="active" onclick="MmScript.switchSection('profile')">Profile</span>
+            <span id="f-work-page-toggle" onclick="MmScript.switchSection('work')">Work</span>
+            <span id="f-contact-page-toggle" onclick="MmScript.switchSection('contact')">Contact</span>
+            <div class="underline" id="f-page-underline"></div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js" type="text/javascript"></script>
+</body>
+
+</html>
